@@ -1,0 +1,107 @@
+
+\documentclass[
+	10.0pt, % Tamanho padrão da fonte
+	% t, % Alinhar verticalmente ao topo
+	% aspectratio=169, % Definir proporção 16:9
+]{beamer}
+
+% Caminho para imagens
+\graphicspath{{img/}}
+
+% Pacotes adicionais
+\usepackage[alf]{abntex2cite} % Citações ABNT
+\usepackage{booktabs} % Linhas de tabela aprimoradas
+\usepackage{raleway} % Fonte
+
+%----------------------------------------------------------------------------------------
+%	SELEÇÃO DE LAYOUT E CORES
+%----------------------------------------------------------------------------------------
+
+\usetheme{Boadilla} % Tema de layout
+
+% Definição de cores personalizadas
+\definecolor{primaryColor}{RGB}{20,45,105} % Cor primária
+\definecolor{secondaryColor}{RGB}{0,100,160} % Cor secundária
+
+% Aplicação das cores no tema
+\setbeamercolor{structure}{fg=primaryColor}
+\setbeamercolor{palette primary}{bg=primaryColor, fg=white}
+\setbeamercolor{palette secondary}{bg=secondaryColor, fg=white}
+\setbeamercolor{title}{bg=primaryColor, fg=white} % Cor do título principal
+
+% Cores no cabeçalho
+\setbeamercolor{headline}{bg=secondaryColor, fg=white}
+\setbeamercolor{section in head/foot}{bg=primaryColor, fg=white}
+\setbeamercolor{subsection in head/foot}{bg=secondaryColor, fg=white}
+
+% Configurações de cores para o rodapé
+\setbeamercolor{author in head/foot}{bg=primaryColor, fg=white} % Nome
+\setbeamercolor{title in head/foot}{bg=secondaryColor, fg=white} % Título
+\setbeamercolor{date in head/foot}{bg=primaryColor, fg=white} % Ano
+\setbeamercolor{page number in head/foot}{bg=primaryColor, fg=white} % Página
+
+% Temas internos e externos
+\useinnertheme{circles} % Tema interno
+\useoutertheme{miniframes} % Tema externo
+\setbeamertemplate{navigation symbols}{} % Remove símbolos de navegação
+
+%----------------------------------------------------------------------------------------
+%	INFORMAÇÕES DA APRESENTAÇÃO
+%----------------------------------------------------------------------------------------
+
+\title[Introdução ao Machine Learning]{Introdução ao Machine Learning\\ Aplicado com Scikit-learn e NumPy}
+\author[GET-ENGCOMP]{Igor Correa Trifilio Campos, Filipe Moreira Vidal, Vitor Hugo Coradini} 
+\institute[]{GET Engenharia Computacional} 
+\date[2024]{} 
+
+%----------------------------------------------------------------------------------------
+
+\begin{document}
+
+%----------------------------------------------------------------------------------------
+%	SLIDE DE TÍTULO
+%----------------------------------------------------------------------------------------
+
+\begin{frame}
+    \begin{figure}
+        \includegraphics[width=0.30\linewidth]{img/GETlogo_azul.png}
+    \end{figure}
+    \titlepage % Exibe o slide de título
+\end{frame}
+
+%----------------------------------------------------------------------------------------
+%	SLIDE DE ÍNDICE
+%----------------------------------------------------------------------------------------
+
+\begin{frame}
+    \frametitle{Estrutura do Minicurso} % Título do slide
+    \tableofcontents % Exibe o índice
+\end{frame}
+
+%----------------------------------------------------------------------------------------
+%	SEÇÕES DO CORPO DA APRESENTAÇÃO
+%----------------------------------------------------------------------------------------
+
+\include{sections/1-introducao}
+\include{sections/2-preprocessamento}
+\include{sections/3-supervisionado}
+\include{sections/4-naosupervisionado}
+\include{sections/5-validacao}
+\include{sections/6-scikit-learn}
+%----------------------------------------------------------------------------------------
+%	SLIDE DE ENCERRAMENTO
+%----------------------------------------------------------------------------------------
+
+\begin{frame}
+    \begin{center}
+    \begin{figure}
+        \includegraphics[width=0.30\linewidth]{img/GETlogo_azul.png}
+    \end{figure}
+    \vspace{0.5cm}
+    {\Huge Obrigado pela atenção!}
+    \end{center}
+\end{frame}
+
+%----------------------------------------------------------------------------------------
+
+\end{document}
