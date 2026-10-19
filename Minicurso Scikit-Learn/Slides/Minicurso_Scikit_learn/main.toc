@@ -1,6 +1,6 @@
 \beamer@sectionintoc {1}{Introdução}{3}{0}{1}
-\beamer@sectionintoc {2}{Pré-processamento}{6}{0}{2}
-\beamer@sectionintoc {3}{Supervisionado}{17}{0}{3}
-\beamer@sectionintoc {4}{Não Supervisionado}{34}{0}{4}
-\beamer@sectionintoc {5}{Validação de Modelos}{42}{0}{5}
-\beamer@sectionintoc {6}{Scikit-Learn}{48}{0}{6}
+\beamer@sectionintoc {2}{Pré-processamento}{9}{0}{2}
+\beamer@sectionintoc {3}{Supervisionado}{20}{0}{3}
+\beamer@sectionintoc {4}{Não Supervisionado}{37}{0}{4}
+\beamer@sectionintoc {5}{Validação de Modelos}{45}{0}{5}
+\beamer@sectionintoc {6}{Scikit-Learn}{51}{0}{6}
